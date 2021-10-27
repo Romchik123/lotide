@@ -11,9 +11,9 @@ const eqArrays = function(arr1, arr2) {
     }
 
     if (result.includes(false)) {
-      console.log(false);
+      console.log(`🛑🛑🛑 Assertion Failed: ${arr1} !== ${arr2}`);
     } else {
-      console.log(true);
+      console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`);
     }
   }
 };
