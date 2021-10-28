@@ -3,13 +3,11 @@ const countLetters = function(params) {
   let newObj = {};
 
   for (const iterator of params) {
-    if (iterator === " ") {
-      newArr += "";
-    } else {
+    if (iterator !== " ") {
       newArr += iterator;
     }
   }
-
+  
   for (const iterator of newArr) {
     if (newObj[iterator]) {
       newObj[iterator] += 1;
